@@ -33,9 +33,9 @@ on:
 # workflow_dispatch:        # Un comment line if you also want to trigger action manually
 
 jobs:
-  sphinx_docs_to_gh-pages:
+  html_dir_to_gh-pages:
     runs-on: ubuntu-latest
-    name: Sphinx docs to gh-pages
+    name: HTML dir to gh-pages
     steps:
       - uses: actions/checkout@v2
         with:
@@ -59,7 +59,7 @@ These are the input parameters of the action:
 They are placed in the last three lines of the above workflow example file:
 
 ```yaml
-      - name: Running the Sphinx to gh-pages Action
+      - name: Running the HTML dir to gh-pages Action
         uses: uibcdf/action-html-dir-to-gh-pages@v1.0.0
           with:
             branch: main
